@@ -1,11 +1,11 @@
 import React from 'react';
 import Banner from './Banner';
 // import WhatIsMataverse from './WhatIsMataverse';
-import WhoAreWe from './WhoAreWe';
+import WhoAreWe from './Vision';
 
 const Sections = () => {
     return (
-        <main className="max-w-screen-xl">
+        <main>
             <Banner />
             <WhoAreWe />
         </main>

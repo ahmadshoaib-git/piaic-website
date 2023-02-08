@@ -17,19 +17,34 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 @layer utilities {
-    .background-overlay {
+    .banner-background-overlay-top {
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
         position: absolute;
         background-color: transparent;
-        background-image: linear-gradient(180deg, #03030a 0%, #00000024 100%);
+        background-image: linear-gradient(180deg, #03030a 0%, #00000003 80%);
         opacity: 1;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
         object-fit: cover;
     }
-    .banner-description {
+    .banner-background-overlay-bottom {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: transparent;
+        background-image: linear-gradient(0deg, #03030a 0%, #00000003 80%);
+        opacity: 1;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        object-fit: cover;
+    }
+    .btn:hover {
+        transition-timing-function: ease-in-out;
+        transform: translate3d(0, -2px, 0);
+        transition-delay: 200ms;
     }
 }
 

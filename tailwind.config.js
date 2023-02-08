@@ -58,6 +58,10 @@ module.exports = {
             backgroundImage: {
                 'banner-image': "url('/banner.jpg')",
             },
+            flex: {
+                2: '2 1 0%',
+                3: '2 1 0%',
+            },
         },
     },
     plugins: [],
