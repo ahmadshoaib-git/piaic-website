@@ -6,7 +6,7 @@ export default function Banner() {
             <Image src="/images/banner.jpg" alt="Metaverse" fill className={styles.bannerImg} />
             <div className="banner-background-overlay-top"></div>
             <div className={`banner-background-overlay-bottom ${styles.overlayInternal}`}>
-                <div className="max-w-screen-xl h-full w-full flex justify-start">
+                <div className={styles.bannerTextSection}>
                     <div className="max-w-[35rem] h-full w-full banner-description flex flex-col justify-center align-start leading-[3.25rem]">
                         <h2 className="font-Roboto uppercase text-white text-5xl font-black">Path leading to the future</h2>
                         <h1 className={styles.heading}>Web 3.0 & Metaverse</h1>

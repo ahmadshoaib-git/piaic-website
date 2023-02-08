@@ -14,7 +14,19 @@
 html {
     font-size: 14px;
     line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 1199px) {
+        font-size: 12px !important;
+    }
+    @media (max-width: 1599px) {
+        font-size: 14px !important;
+    }
+    @media (max-width: 1921px) {
+        font-size: 16px !important;
+    }
+    @media (max-width: 3839px) {
+        font-size: 32px !important;
+    }
 }
 @layer utilities {
     .banner-background-overlay-top {

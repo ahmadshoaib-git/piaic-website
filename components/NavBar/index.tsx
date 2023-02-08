@@ -13,12 +13,13 @@ export default function NavBar() {
 
     const handleClick = () => setNav(!nav);
     const handleClose = () => setNav(!nav);
-    console.log(offset, 'offset <= 1 = ', offset <= 1);
     return (
-        <nav className={`${styles.nav} ${offset > 1 && styles.scrolledNav} ${nav && '!h-full'}`}>
+        <nav className={`${styles.nav} ${offset > 30 && styles.scrolledNav} ${nav && '!h-full'}`}>
             <div className={styles.navSectionMobile}>
                 <div className="flex items-center">
-                    <h1 className={styles.logo}>Panaverse</h1>
+                    <h1 className={styles.logo}>
+                        Panaverse <span className={styles.logoText}>DAO</span>
+                    </h1>
                     <ul role="list" className={styles.navListMobile}>
                         <li>
                             <Link className={styles.link} href="#">
@@ -51,7 +52,7 @@ export default function NavBar() {
                     <div className={`${styles.btn} border-r-2 border-r-black rounded-tl-md rounded-bl-md`}>Login</div>
                     <div className={`${styles.btn} rounded-tr-md rounded-br-md`}>Register</div>
                 </div>
-                <div className="sm:hidden mr-4" onClick={handleClick}>
+                <div className="md:hidden mr-4" onClick={handleClick}>
                     {!nav ? <GiHamburgerMenu /> : <IoMdClose />}
                 </div>
             </div>

@@ -5,7 +5,7 @@ import WhoAreWe from './Vision';
 
 const Sections = () => {
     return (
-        <main>
+        <main className="flex flex-col items-center">
             <Banner />
             <WhoAreWe />
         </main>
