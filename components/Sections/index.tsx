@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
-// import WhatIsMataverse from './WhatIsMataverse';
+import Metaverse from './Metaverse';
 import WhoAreWe from './Vision';
 
 const Sections = () => {
@@ -8,6 +8,7 @@ const Sections = () => {
         <main className="flex flex-col items-center">
             <Banner />
             <WhoAreWe />
+            <Metaverse />
         </main>
     );
 };

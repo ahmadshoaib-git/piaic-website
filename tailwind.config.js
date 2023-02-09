@@ -42,6 +42,7 @@ module.exports = {
             },
             fontFamily: {
                 Roboto: ['Roboto'],
+                Barlow: ['Barlow Condensed, sans-serif'],
             },
             colors: {
                 black: '#070707',
@@ -51,6 +52,7 @@ module.exports = {
                 'extra-green': '#2ffba1',
                 green: '#23dcc8',
                 'bright-green': '#28f4af',
+                'dark-sea-blue': '#02121e',
                 gray: '#6a7f8e',
                 yellow: '#f3ba2f',
                 red: '#e84142',

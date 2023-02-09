@@ -58,5 +58,14 @@ html {
         transform: translate3d(0, -2px, 0);
         transition-delay: 200ms;
     }
+    .bg-gradient-yellow {
+        background: linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 99.77%);
+    }
+    .bg-gradient-pink {
+        background: linear-gradient(135deg, rgb(151, 96, 189) 0%, rgb(77, 214, 203) 100%);
+    }
+    .bg-gradient-green {
+        background: linear-gradient(rgb(47, 250, 161) 0%, rgb(73, 240, 230) 100%);
+    }
 }
 

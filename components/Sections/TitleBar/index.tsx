@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './titleBar.style';
 
 interface Props {
-    children: React.ReactElement;
+    children: React.ReactElement | React.ReactFragment;
     title: string;
     position: 'left' | 'right';
 }
