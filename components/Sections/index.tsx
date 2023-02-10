@@ -2,6 +2,8 @@ import React from 'react';
 import Banner from './Banner';
 import Metaverse from './Metaverse';
 import WhoAreWe from './Vision';
+import Tracks from './Tracks';
+import Outcome from './OutCome';
 
 const Sections = () => {
     return (
@@ -9,6 +11,8 @@ const Sections = () => {
             <Banner />
             <WhoAreWe />
             <Metaverse />
+            <Tracks />
+            <Outcome />
         </main>
     );
 };
