@@ -8,9 +8,14 @@ const Vision = () => {
     return (
         <TitleBar title="Vision" position={'right'}>
             <>
-                <div className="w-full text-white flex gap-8 flex-col-reverse lg:flex-row">
+                <div className="group w-full text-white flex gap-8 flex-col-reverse lg:flex-row">
                     <div className="flex-1 flex justify-center items-center lg:justify-start">
-                        <Image src="/images/vision.png" alt="Metaverse" fill className="max-w-[25rem] min-w-[25rem] max-h-[20rem] min-h-[20rem] !static" />
+                        <Image
+                            src="/images/vision.png"
+                            alt="Metaverse"
+                            fill
+                            className="max-w-[25rem] min-w-[25rem] max-h-[20rem] min-h-[20rem] !static group-hover:sectionImageAnimation2"
+                        />
                         {/* <p className="font-Roboto text-4xl leading-10 text-yellow font-bold mb-3 uppercase">Panaverse</p>
                     <p className="font-Roboto text-4xl leading-10 text-yellow font-bold  uppercase">DAO</p> */}
                     </div>
