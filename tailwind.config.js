@@ -29,6 +29,12 @@ module.exports = {
 
                 '2xl': '1536px',
                 // => @media (min-width: 1536px) { ... }
+
+                '3xl': '1820px',
+                // => @media (min-width: 1536px) { ... }
+
+                '4xl': '2230px',
+                // => @media (min-width: 1536px) { ... }
             },
             fontSize: {
                 xs: '0.7rem',
@@ -47,7 +53,7 @@ module.exports = {
             colors: {
                 black: '#070707',
                 'dark-blue': '#121228',
-                'nav-default': '#d93c9f',
+                'dark-green': '#15252e',
                 blue: '#04aac7',
                 'extra-green': '#2ffba1',
                 green: '#23dcc8',
