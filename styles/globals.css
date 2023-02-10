@@ -12,20 +12,43 @@
 }
 
 html {
-    font-size: 14px;
     line-height: 1.5;
+}
 
-    @media (max-width: 1199px) {
-        font-size: 12px !important;
+.tab {
+    color: #6a7f8e;
+    text-decoration: none;
+}
+
+::selection {
+    background: #03242f;
+    color: #ffffff !important;
+}
+
+@media (max-width: 1199px) {
+    html {
+        font-size: 12px;
     }
-    @media (max-width: 1599px) {
-        font-size: 14px !important;
+}
+@media (min-width: 1200px) {
+    html {
+        font-size: 14px;
     }
-    @media (max-width: 1921px) {
-        font-size: 16px !important;
+}
+@media (min-width: 1600px) {
+    html {
+        font-size: 16px;
     }
-    @media (max-width: 3839px) {
-        font-size: 32px !important;
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media (min-width: 2560px) {
+    html {
+        font-size: 24px;
     }
 }
 @layer utilities {
@@ -66,6 +89,54 @@ html {
     }
     .bg-gradient-green {
         background: linear-gradient(rgb(47, 250, 161) 0%, rgb(73, 240, 230) 100%);
+    }
+    .border-color-gradient-green {
+        border-color: linear-gradient(rgb(47, 250, 161) 0%, rgb(73, 240, 230) 100%);
+    }
+    .navbar {
+        background: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    @keyframes clockwiseSpin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .clockwiseSpin {
+        animation-duration: 0.5s;
+        animation-iteration-count: 0.5;
+        animation-name: clockwiseSpin;
+        animation-timing-function: linear;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-1rem);
+        }
+    }
+
+    .sectionImageAnimation {
+        animation: bounce 0.8s alternate infinite ease-in;
+    }
+    .sectionImageAnimation2 {
+        animation: mover 0.6s alternate infinite ease-in;
     }
 }
 
