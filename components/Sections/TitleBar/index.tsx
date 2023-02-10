@@ -8,7 +8,6 @@ interface Props {
 }
 
 const TitleBar = ({ children, title, position = 'left' }: Props) => {
-    console.log('position >', position);
     const getPosition = (): React.ReactElement => {
         if (position === 'right')
             return (
