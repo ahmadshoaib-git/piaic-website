@@ -16,9 +16,9 @@ const Tabs = ({ active, onChange, children }: PropsTabs) => {
             <div className="flex justify-center gap-[2rem]">
                 {children.map((c: { props: { title: any } }, index: number) => (
                     <a
-                        href={'javascript: void(0)'}
+                        key={`a-${index.toString()}`}
+                        href={'#'}
                         onClick={() => onChange(index)}
-                        // className={active === index ? 'tab activeTab' : 'tab '}
                         className={`text-center uppercase tab text-2xl font-Barlow px-[1rem] py-[0.5rem] mb-[3rem] hover:text-white ${
                             active === index && tabActiveClass
                         }`}

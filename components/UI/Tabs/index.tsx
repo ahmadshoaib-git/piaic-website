@@ -15,7 +15,7 @@ const CustomTabs = ({ tabData }: Props) => {
             <Tabs active={active} onChange={handleChange}>
                 {tabData.map((nTab, index) => (
                     <Tab key={`T-${index.toString()}`} title={nTab.title}>
-                        <React.Fragment key={`TRF-${index.toString()}`}>{nTab.children}</React.Fragment>
+                        {nTab.children}
                     </Tab>
                 ))}
             </Tabs>
