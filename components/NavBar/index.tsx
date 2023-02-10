@@ -14,8 +14,8 @@ export default function NavBar() {
     const handleClick = () => setNav(!nav);
     const handleClose = () => setNav(!nav);
     return (
-        <nav className={`${styles.nav} ${offset > 30 && styles.scrolledNav} ${nav && '!h-full'}`}>
-            <div className={styles.navSectionMobile}>
+        <nav className={`${styles.nav} ${offset > 30 && styles.scrolledNav} ${nav ? '!h-full items-start' : 'items-center'}`}>
+            <div className={`${styles.navSectionMobile}`}>
                 <div className="flex items-center">
                     <h1 className={styles.logo}>
                         Panaverse <span className={styles.logoText}>DAO</span>
@@ -43,16 +43,16 @@ export default function NavBar() {
                         </li>
                         <li>
                             <Link className={styles.link} href="#">
-                                Pricing
+                                Team
                             </Link>
                         </li>
                     </ul>
                 </div>
                 <div className={styles.btnSection}>
-                    <div className={`${styles.btn} border-r-2 border-r-black rounded-tl-md rounded-bl-md`}>Login</div>
-                    <div className={`${styles.btn} rounded-tr-md rounded-br-md`}>Register</div>
+                    <div className={`${styles.btn} border-r-2 border-r-black rounded-tl-md rounded-bl-md pt-[0.3rem]`}>Login</div>
+                    <div className={`${styles.btn} rounded-tr-md rounded-br-md pt-[0.3rem]`}>Register</div>
                 </div>
-                <div className="md:hidden mr-4" onClick={handleClick}>
+                <div className="md:hidden mr-4 text-white" onClick={handleClick}>
                     {!nav ? <GiHamburgerMenu /> : <IoMdClose />}
                 </div>
             </div>
@@ -80,7 +80,7 @@ export default function NavBar() {
                 </li>
                 <li className={styles.navListItemMobile}>
                     <Link onClick={handleClose} className={styles.link} href="#">
-                        Pricing
+                        Team
                     </Link>
                 </li>
 
