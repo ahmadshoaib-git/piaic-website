@@ -14,12 +14,12 @@ const Metaverse = () => {
                         <div className="text-gray family-Roboto font-normal text-2xl text-justify mb-[1rem]">
                             <p className="mb-[2rem]">
                                 A communal environment or virtual world made possible by the fusion of physical and virtual reality is referred to as the
-                                "metaverse." Users can engage in shared interactions with a wide range of virtual objects and environments in this imagined
+                                metaverse. Users can engage in shared interactions with a wide range of virtual objects and environments in this imagined
                                 networked virtual world.
                             </p>
                             <p>
-                                Web3, also known as the decentralized web, is the third and latest" phase” of the internet. Web3 is built on peer-to-peer
-                                networks of computers that talk to each other without middlemen.
+                                Web3, also known as the decentralized web, is the third and latest phase of the internet. Web3 is built on peer-to-peer networks
+                                of computers that talk to each other without middlemen.
                             </p>
                         </div>
                         <ReadMore title="Read More" href="#" />
