@@ -92,7 +92,7 @@ export default function Banner() {
                                 <ImYoutube />
                             </div>
                         </div>
-                        <p className="text-sm text-yellow">© 2023 Ahmad Shoaib. All rights reserved.</p>
+                        <p className="text-md text-yellow font-Barlow">© 2023 Ahmad Shoaib. All rights reserved.</p>
                     </div>
                 </div>
             </div>

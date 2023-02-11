@@ -17,9 +17,9 @@ const Tabs = ({ active, onChange, children }: PropsTabs) => {
                 {children.map((c: { props: { title: any } }, index: number) => (
                     <a
                         key={`a-${index.toString()}`}
-                        href={'#'}
+                        href={'javascript: void(0)'}
                         onClick={() => onChange(index)}
-                        className={`text-center uppercase tab text-2xl font-Barlow px-[1rem] py-[0.5rem] mb-[3rem] hover:text-white ${
+                        className={`text-center uppercase tab text-xl1.5 font-Barlow px-[1rem] py-[0.5rem] mb-[3rem] hover:text-white ${
                             active === index && tabActiveClass
                         }`}
                     >
